@@ -1,0 +1,18 @@
+<div class="center padded">
+    <div class="content">
+        <div class="row vert-pad">
+            <div class="left padded">
+                <h1>Ahora o nunca! trabajemos juntos :)</h1>
+                <p>Dejame trabajar con tigo en esta aplicacion, sera la mejor que hemos creado</p>
+            </div>
+            <div id="contact" class="right padded">
+                <form action="{{ url_for('portfolio.mail') }}" method="post" class="contact-form">
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <textarea name="message"   placeholder="Mensaje" minlength="10"></textarea>
+                    <button class="btn">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
